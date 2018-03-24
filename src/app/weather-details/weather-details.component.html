@@ -1,0 +1,31 @@
+<div> 
+
+<div class="">
+    
+
+    <form novalidate
+          [formGroup]="searchForm"
+          (submit)="getWeatherResultBasedOnCity()">
+      <div class="input-group" style="padding-left: 36%;padding-top: 4%;">
+       
+        <input type="text"
+               class="form-control"
+               style="width: 150px;border-radius: 0px;"
+               placeholder="City name"
+               aria-describedby="Search"
+               formControlName="searchInput">
+                <button class="btn btn-default"
+                [disabled]="searchForm.invalid">
+          Search
+        </button>
+      </div>
+
+      <section class="margin-top right">
+      
+      </section>
+    </form>
+</div>
+
+  <app-weather-result [weatherResult]="weatherResult">
+  </app-weather-result>
+  </div>
