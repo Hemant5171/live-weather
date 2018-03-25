@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # LiveWeather
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
@@ -29,4 +29,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # live-weather
 Project for displaying the weather for cities
->>>>>>> 650fd38c1a2b8113c13873469c655e256f50daa2
