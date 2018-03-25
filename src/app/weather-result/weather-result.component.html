@@ -5,19 +5,15 @@
 <div *ngIf="weatherResult" style="padding-top: 50px;">
 
    <div  style="float: left;font: 15px;padding-left: 25px;">
-     <table style="border: 1px;">
+      <h4> Location</h4>
+     <table id="weather">
        <tr>
-         <td><h4>Country</h4>
-         </td>
-         <td>
-          <h4> {{weatherResult.sys.country}}</h4>
-         </td>
+         <td>Country</td>
+         <td>{{weatherResult.sys.country}}</td>
        </tr>
        <tr>
-         <td><h4> City</h4>
-         </td>
-         <td>
-         <h4> {{weatherResult.name}}</h4>
+         <td>City</td>
+         <td>{{weatherResult.name}}
          </td>
        </tr>
      </table>
@@ -27,9 +23,9 @@
 
     <div>
       <h4> Wind Conditions</h4>
-      <table>
+      <table id="weather">
         <tr>
-          <td> Speed   </td>
+          <td> Speed  </td>
           <td>{{weatherResult.wind.speed}}m/s </td>
         </tr>
           <tr>
@@ -38,12 +34,12 @@
           </tr>
           <tr>
             <td> Description </td>
-            <td> {{weatherResult.weather[0].main}} -</td>
-            <td> {{weatherResult.weather[0].description}}</td>
+            <td> {{weatherResult.weather[0].main}} - {{weatherResult.weather[0].description}}</td>
+            
           </tr>
     </table>
     <h4>Other Information</h4>
-    <table>
+    <table id="weather">
      <tr>
        <td>Temperature
        </td>
