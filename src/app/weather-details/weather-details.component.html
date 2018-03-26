@@ -24,6 +24,33 @@
       
       </section>
     </form>
+<<<<<<< HEAD
+
+  <form novalidate
+          [formGroup]="forecastForm"
+          (submit)="getWeatherForecastBasedOnCity()">
+      <div class="input-group" style="padding-left: 36%;padding-top: 4%;">
+       
+        <input type="text"
+               class="form-control"
+               style="width: 150px;border-radius: 0px;"
+               placeholder="City name"
+               aria-describedby="Search"
+               formControlName="searchInput">
+                <button class="btn btn-default"
+                [disabled]="searchForm.invalid">
+          Forecast
+        </button>
+      </div>
+
+      <section class="margin-top right">
+      
+      </section>
+    </form>
+
+
+=======
+>>>>>>> 37bc4b52a601ee8163d9674b8f59e3cf27dc90bb
 </div>
 
   <app-weather-result [weatherResult]="weatherResult">
