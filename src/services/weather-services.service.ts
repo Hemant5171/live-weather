@@ -6,13 +6,10 @@ import {Observable} from 'rxjs';
 
 import {API_KEY} from '../constant/weather_constant';
 import {URL} from '../constant/weather_constant';
-<<<<<<< HEAD
+
 import {FORECAST_URL} from '../constant/weather_constant';
 import {WeatherResult} from "../model/weather-results";
 import {List} from "../model/list";
-=======
-import {WeatherResult} from "../model/weather-results";
->>>>>>> 37bc4b52a601ee8163d9674b8f59e3cf27dc90bb
 
 @Injectable()
 export class WeatherService {
@@ -32,7 +29,6 @@ export class WeatherService {
       });
   }
 
-<<<<<<< HEAD
   getWeatherForecastBasedOnCity(city:String): Observable<List>
    {
     return this._http.get(FORECAST_URL + city + "&APPID=" + API_KEY + "&units=metric")
@@ -46,6 +42,4 @@ export class WeatherService {
       });
   }
 
-=======
->>>>>>> 37bc4b52a601ee8163d9674b8f59e3cf27dc90bb
 }
